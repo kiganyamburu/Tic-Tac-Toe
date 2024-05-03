@@ -1,17 +1,17 @@
 import math
 import random
 
-class player:
-    def __init__(self,letter):
+class Player:
+    def __init__(self, letter):
         # letter is X or 0
-        self. letter = letter
+        self.letter = letter
     
     
     # All players to get their next move given a game 
     def get_move(self, game):
         pass
     
-    class RandomComputer(Player):
+    class RandomComputerPlayer(Player):
         def __init__(self, letter):
             super().__init__(letter)
             
@@ -27,7 +27,7 @@ class player:
                 valid_square = False
                 val = None
                 while not valid_square:
-                    square = inpu(self.letter + '\'s turn. Input move (0-9):')
+                    square = input(self.letter + '\'s turn. Input move (0-8):')
                     #We're are going to check that this is a correct value by trying to cast 
                     # It to integer and if its not then we say its invalid 
                     #if that spot is not available not the board, we also say its invalid 
