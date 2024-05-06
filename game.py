@@ -71,6 +71,10 @@ def play(game, x_player, o_player, print_game=True):
             square = o_player.get_move(game)
     else:
         square = x_player.get_move(game)
+        
+        
+        def hello():
+            pass
 
         # define a function to make a move
         if game.make_move(square, letter):
@@ -91,6 +95,7 @@ def play(game, x_player, o_player, print_game=True):
 
         if print_game:
             print("It's a tie!")
+            
 
 
 if __name__ == "__main__":
